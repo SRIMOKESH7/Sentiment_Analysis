@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentiment Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("static\images\fullstackbg.jpg");
+            padding: 20px;
+
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body style="background-image: url('/static/images/fullstackbg.jpg');"></body>
+<body>
+    <h1>Sentiment Analysis</h1>
+    <form action="/predict" method="POST">
+        <input type="text" name="sentence" placeholder="Enter a sentence">
+        <br><br>
+        <input type="submit" value="Analyze">
+    </form>
+</body>
+</html>
